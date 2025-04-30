@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JSSC</title>
+  <style>
+    body {
+      background-color: rgb(223, 236, 223);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .left {
+      font-size: large;
+      max-width: 500px;
+    }
+
+    .jh {
+      color: rgb(29, 175, 29);
+    }
+
+    .right {
+      color: blue;
+      font-size: large;
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .login {
+      border: 3px solid rgb(3, 87, 3);
+      background-color: white;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .firstline {
+      background-color: rgb(3, 87, 3);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+
+    .star {
+      color: red;
+      margin-right: 5px;
+    }
+
+    .figure {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .figure-text {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    .btn {
+      background-color: rgb(8, 8, 40);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .actions {
+      text-align: center;
+    }
+
+    p {
+      color: red;
+      font-weight: bold;
+      font-size: large;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: rgb(14, 50, 14);
+      color: white;
+      text-align: center;
+      padding: 14px;
+      font-size: large;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .right {
+        text-align: left;
+      }
+
+      .login {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .figure {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="emblem.jpg" alt="Jharkhand Emblem" />
+    <div class="left">
+      <strong>Government of Jharkhand</strong><br />
+      <span class="jh"><strong>Jharkhand Staff Selection Commission</strong></span><br />
+      झारखंड कर्मचारी चयन आयोग
+    </div>
+    <div class="right">
+      <strong>Jharkhand General Graduate Level<br />Combined Competitive Examination - 2023</strong>
+    </div>
+  </header>
+
+  <main>
+    <div class="login">
+      <div class="firstline">Candidate Login</div>
+      <form>
+        <label>
+          <span class="star">*</span>Registration No.
+          <input type="number" placeholder="Enter Registration Number" required />
+        </label>
+
+        <label>
+          <span class="star">*</span>Date of Birth
+          <input type="date" required />
+        </label>
+
+        <div class="figure">
+          <span class="figure-text">4L8011</span>
+          <button type="button" class="btn"><i>Refresh</i></button>
+        </div>
+
+        <label>
+          <span class="star">*</span>Enter the text seen in the image above
+          <input type="text" placeholder="Captcha" required />
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="btn">Login</button>
+          <button type="reset" class="btn">Cancel</button>
+        </div>
+      </form>
+
+      <p>Login as per given details at your E-mail Id OR SMS</p>
+    </div>
+  </main>
+
+  <footer>
+    This page is best viewed on Firefox, Chrome and all recent browsers.
+  </footer>
+
+</body>
+</html>
